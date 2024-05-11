@@ -1,0 +1,171 @@
+:root{
+  --main-color: #BE3144;
+  --bg-color: hsla(0, 0%, 0%, 0.724);
+}
+
+*, ::before, ::after{
+  box-sizing: border-box;
+}
+h1, p{
+    margin: 0;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: Lato, sans-serif;
+}
+body{
+  margin: 0 auto;
+  padding: 0;
+}
+li{
+  list-style:none;
+}
+
+#navbar{
+  margin-top: 0;
+  font-size: 2.5rem;
+  width: 100%;
+  position: fixed;
+  background-color: var(--main-color);
+}
+#navbar a, #profiles a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+#navbar > ul, #profiles > ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#welcome-section{
+  height: 100vh;
+  background-color: var(--bg-color);
+  font-size: 3rem;
+  text-align: center;
+}
+
+h1{
+  font-size: 6rem;
+  padding-top: 200px;
+  font-weight: 700;
+  color: white;
+}
+#welcome-section p{
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1em;
+  color: var(--main-color);
+}
+
+.border-spacing{
+  border: 5px solid var(--main-color);
+}
+
+/* PROJECTS SECTION */
+
+#projects{
+  background-color: hsl(0, 0%, 0%);
+  height: 790px;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 30px;
+  overflow: auto;
+}
+#projects h2{
+  margin: 0;
+  margin-bottom: 5px;
+}
+.project-tile{
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  max-width: 1000px;
+}
+
+.project{
+  height: 300px;
+  margin-bottom: 20px;
+}
+.project-img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.project a {
+  background-color: var(--main-color);
+  padding: 10px;
+  font-weight: 300;
+  width: 300px;
+  display: inline-block;
+}
+
+.project a:hover, #navbar ul li a:hover{
+  background-color: #be314486;
+  color: #f00;
+}
+.project a:visited{
+  color: white;
+}
+
+/* PROFILES SECTION */ 
+
+#profiles{
+  height: 80px;
+  background-color: var(--bg-color);
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+#profiles ul{
+  margin: 0;
+  padding-top: 30px;
+  padding-inline-start: 0;
+}
+h3{
+  margin: 0;
+  color:white;
+  font-weight: 100;
+}
+
+@media (max-width: 460px) {
+    #profiles{
+      font-size: 1.8em;
+    }
+    #projects{
+      height: 500px;
+
+    }
+  }
+
+@media (max-width: 368px) {
+  .project a {
+    font-size: 1.5rem;
+  }
+  .project{
+    width: 220px;
+  }
+  #navbar > ul{
+    flex-direction: column;
+    padding-inline-start: 0;
+  }
+  #navbar{
+    height: 120px;
+  }
+  
+}
+@media (max-width: 348px) {
+    #profiles ul{
+      padding: 0;
+    }
+    
+  }
+
