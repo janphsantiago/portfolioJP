@@ -142,12 +142,15 @@ h3{
 /* MEDIA QUERIES FOR RESPONSIVE VIEWING */
 @media (max-width: 768px){
   #welcome-section{
-    height: 400px;
+    height: 300px;
   }
   #projects {
     overflow-y: scroll;
     max-height: 100vh; 
 }
+  h1{
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 460px) {
