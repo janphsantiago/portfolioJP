@@ -41,11 +41,6 @@ li{
   align-items: center;
   justify-content: space-evenly;
 }
-/* JAVASCRIPT CLASS TO ADD */
-.active, #navbar a.active {
-  color: #ff6600;
-  font-size: 30px;
-}
 
 #welcome-section{
   height: 100vh;
@@ -144,11 +139,14 @@ h3{
 #profiles a:hover{
   color: aqua;
 }
+
+/* MEDIA QUERIES FOR RESPONSIVE VIEWING */
 @media (max-width: 658px){
   #welcome-section{
     height: 400px;
   }
 }
+
 @media (max-width: 460px) {
     #profiles{
       font-size: 1.8em;
