@@ -10,6 +10,7 @@ h1, p{
     margin: 0;
 }
 
+
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -39,6 +40,11 @@ li{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+/* JAVASCRIPT CLASS TO ADD */
+.active, #navbar a.active {
+  color: #ff6600;
+  font-size: 30px;
 }
 
 #welcome-section{
@@ -77,7 +83,7 @@ h1{
   overflow: auto;
 }
 #projects h2{
-  margin: 0;
+  margin-top: 20px;
   margin-bottom: 5px;
 }
 .project-tile{
@@ -119,7 +125,7 @@ h1{
 /* PROFILES SECTION */ 
 
 #profiles{
-  height: 80px;
+  height: 100px;
   background-color: var(--bg-color);
   font-size: 2rem;
   margin: 0;
@@ -135,15 +141,25 @@ h3{
   color:white;
   font-weight: 100;
 }
-
+#profiles a:hover{
+  color: aqua;
+}
+@media (max-width: 658px){
+  #welcome-section{
+    height: 400px;
+  }
+}
 @media (max-width: 460px) {
     #profiles{
       font-size: 1.8em;
     }
     #projects{
       height: 500px;
-
     }
+    .active{
+      color: white;
+    }
+
   }
 
 @media (max-width: 368px) {
