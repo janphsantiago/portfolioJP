@@ -10,7 +10,6 @@ h1, p{
     margin: 0;
 }
 
-
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -141,23 +140,20 @@ h3{
 }
 
 /* MEDIA QUERIES FOR RESPONSIVE VIEWING */
-@media (max-width: 658px){
+@media (max-width: 768px){
   #welcome-section{
     height: 400px;
   }
+  #projects {
+    overflow-y: scroll;
+    max-height: 100vh; 
+}
 }
 
 @media (max-width: 460px) {
-    #profiles{
+  #profiles{
       font-size: 1.8em;
     }
-    #projects{
-      height: 500px;
-    }
-    .active{
-      color: white;
-    }
-
   }
 
 @media (max-width: 368px) {
