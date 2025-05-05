@@ -106,6 +106,7 @@ h1{
   font-weight: 300;
   width: 300px;
   display: inline-block;
+  color: white;
 }
 
 .project a:hover, #navbar ul li a:hover{
