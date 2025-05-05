@@ -112,9 +112,11 @@ h1{
   background-color: #be314486;
   color: #f00;
 }
-.project a:visited{
+.project a:visited,
+a:active{
   color: white;
 }
+
 
 /* PROFILES SECTION */ 
 
